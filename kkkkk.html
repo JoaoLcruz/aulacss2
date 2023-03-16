@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kkkkk.css">
+</head>
+<body>
+    <div class="divc" >salario <input id="isalario"><br></div>
+    <div class="divc">bruto <input id="ibruto"><br></div>
+    <div class="divc">bonus <input id="ibonus"><br></div>
+    <button class="divc" onclick="verificar()">ver seu salario</button><br>
+    <div class="divc" id="div_msg"></div><br>
+</body>
+</html>
+<script>
+    function verificar() {
+        var salario = Number(isalario.value) ;
+        var bruto = Number(ibruto.value) ;
+        var bonus = Number(ibonus.value) ;
+        var salariobruto = salario + bruto + bonus;
+        div_msg.innerHTML = `SEU SALARIO É R$${salariobruto}`;
+    }
+</script>

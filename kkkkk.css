@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    background-color: black;
+    padding: 0;
+}
+.divc {
+    color: blue;
+    font-size: medium;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
